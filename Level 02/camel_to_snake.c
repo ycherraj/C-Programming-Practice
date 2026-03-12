@@ -9,7 +9,7 @@ int main(int ac, char *av[])
         return (write(1, "\n", 1));
 
     i = 0;
-    while (ac != 2 && av[1][i])
+    while (av[1][i])
     {
         c = av[1][i];
         if (c >= 'A' && c <= 'Z')

@@ -6,7 +6,7 @@ void	snake_to_camel(char *str)
 	int		i;
 
 	i = 0;
-	while (str[i++] != '\0')
+	while (str[i] != '\0')
 	{
 		if (str[i] == '_')
 		{
@@ -16,6 +16,7 @@ void	snake_to_camel(char *str)
 		}
 		else
 			write(1, &str[i], 1);
+		i++;
 	}
 }
 

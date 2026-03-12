@@ -1,11 +1,14 @@
 #include <unistd.h>
 
-int main(int ac, char **av){
-    if (ac != 2)
-        return (write(1, "\n", 1));
+int main(int ac, char **av)
+{
     int i = 0;
     int j = 0;
     char *s = av[1];
+    
+    if (ac != 2)
+        return (write(1, "\n", 1));
+
     while (s[i])
         i++;
     i--;
